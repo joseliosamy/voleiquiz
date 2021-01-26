@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.contrastText};
   }
   html, body {
+    width:100%;
     min-height: 100vh;
   }
   #__next {

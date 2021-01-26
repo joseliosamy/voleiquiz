@@ -11,17 +11,10 @@ const Title = styled.h1`
   font-size: 50px;
   color: ${({ theme }) => theme.colors.primary};
 `
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
 export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
+  width:80%;
   padding-top: 45px;
-  margin: auto 10%;
+  margin: 0 auto;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
@@ -36,23 +29,19 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The voley spike</h1>
+            <h1>Quiz de vôlei?</h1>
           </Widget.Header>
           <Widget.Content>
-            <h1>The voley spike</h1>
+            <h1>Como funciona?</h1>
 
-            <p>lorem impson erod smasr</p>
+            <p>No quiz veremos perguntas sobre fundamentos do vôlei, ações corretas a serem tomadas em dada situação, características das modalidades de vôlei e etc.</p>
           </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Header>
-            <h1>The voley spike</h1>
+            <h1>Outros quizes</h1>
           </Widget.Header>
-          <Widget.Content>
-              <h1>The voley spike</h1>
-
-              <p>lorem impson erod smasr</p>
-            </Widget.Content>
+          <Widget.Content></Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>

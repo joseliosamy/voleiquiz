@@ -23,6 +23,15 @@ const FooterWrapper = styled.footer`
       text-decoration: underline;
     }
   }
+  @media screen and (max-width: 305px){
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    img{
+      margin: 0;
+    }
+  }
 `;
 
 export default function Footer(props) {
