@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import db from '../db.json';
+import MetaTags from '../src/components/MetaTags';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import { Fragment } from 'react';
 
 
 const Title = styled.h1`
