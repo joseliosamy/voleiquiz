@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   max-width:350px;
@@ -32,7 +32,7 @@ Widget.Header = styled.header`
   }
 `;
 Widget.Content = styled.div`
-  background-color: ${({theme}) => theme.colors.bgWidgets};
+  background-color: ${({ theme }) => theme.colors.bgWidgets};
   padding: 24px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
