@@ -14,6 +14,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 
 export const QuizContainer = styled.div`
   width:80%;
@@ -58,16 +59,11 @@ export default function Home() {
               // router
             }}
             >
-              <input
-                onChange={
-                  function (event) {
-                    console.log(event.target.value);
-                    // state
-                    // name = event.target.value;
-                    setName(event.target.value);
-                  }
-                }
-                placeholder="Seu usuário"
+              <Input
+                name="nomeDoUsuario"
+                onChange={(event) => setName(event.target.value)}
+                placeholder="Diz ai seu nome"
+                value={name}
               />
               <button type="submit" disabled={name.length === 0}>
                 Jogar
