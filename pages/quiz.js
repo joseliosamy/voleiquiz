@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable import/no-unresolved */
 import { useEffect, useState } from 'react';
 
 import db from '../db.json';
